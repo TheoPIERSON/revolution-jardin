@@ -37,7 +37,7 @@
 
       <!-- Carte en haut à gauche (modifiée) -->
       <div class="absolute top-12 left-12 bg-white rounded-xl p-6 shadow-lg max-w-md">
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700">
           {{ cardTexts[activeImageIndex] }}
         </p>
       </div>
@@ -55,7 +55,7 @@ const images = ["/images/jardin1.jpg", "/images/jardin2.jpg", "/images/jardin3.j
 const cardTexts = [
   "Confiez-nous l'entretien de votre jardin pour un espace toujours impeccable. Nos experts s'occupent de la tonte, du désherbage et de l'entretien régulier pour un jardin en pleine santé.",
   "Transformez votre espace extérieur avec notre service d'aménagement paysager. Nous créons des jardins harmonieux et fonctionnels qui reflètent votre style et vos besoins.",
-  "Nos spécialistes en élagage et abattage interviennent avec précision pour entretenir vos arbres ou les retirer en toute sécurité, préservant ainsi la beauté et la santé de votre espace vert."
+  "Nos spécialistes en élagage et abattage interviennent avec précision pour entretenir vos arbres ou les retirer en toute sécurité, préservant ainsi la beauté et la santé de votre espace vert.",
 ];
 
 // Index de l'image active

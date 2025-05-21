@@ -2,6 +2,9 @@
   <Hero />
   <About />
   <PrestationType />
+  <Work />
+  <Galery />
+  <Footer />
 </template>
 
 <script setup lang="ts"></script>
