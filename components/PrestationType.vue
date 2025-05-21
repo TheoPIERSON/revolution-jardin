@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-col h-[calc(100vh-var(--navbar-height,80px))]">
+  <div class="flex flex-col h-[calc(100vh-var(--navbar-height,80px))] py-12">
     <!-- Conteneur des boutons -->
-    <div class="flex w-full gap-4 px-2">
+    <h2 class="p-6 text-2xl font-bold mb-2">Transformez votre espace extérieur</h2>
+
+    <div class="flex w-full gap-4 px-6">
       <button
         @click="changeImage(0)"
         class="flex-1 py-5 transition-colors duration-300 focus:outline-none rounded-lg"
@@ -33,23 +35,11 @@
         class="w-full h-full object-cover transition-opacity duration-500 rounded-xl"
       />
 
-      <!-- Carte en bas à gauche -->
-      <div class="absolute bottom-12 left-12 bg-white rounded-xl p-6 shadow-lg max-w-md">
-        <h2 class="text-2xl font-bold mb-2">Transformez votre espace extérieur</h2>
+      <!-- Carte en haut à gauche (modifiée) -->
+      <div class="absolute top-12 left-12 bg-white rounded-xl p-6 shadow-lg max-w-md">
         <p class="text-gray-700 mb-4">
-          Confiez-nous votre jardin et découvrez notre expertise en aménagement paysager, entretien et élagage pour un
-          résultat qui dépasse vos attentes.
+          {{ cardTexts[activeImageIndex] }}
         </p>
-        <div class="flex gap-4">
-          <button class="bg-black text-white py-2 px-4 rounded-lg hover:bg-opacity-80 transition-colors duration-300">
-            Demander devis
-          </button>
-          <button
-            class="border border-black text-black py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors duration-300"
-          >
-            Nos réalisations
-          </button>
-        </div>
       </div>
     </div>
   </div>
@@ -60,6 +50,13 @@ import { ref } from "vue";
 
 // Tableau d'images (à remplacer par vos propres images)
 const images = ["/images/jardin1.jpg", "/images/jardin2.jpg", "/images/jardin3.jpg"];
+
+// Textes pour chaque type de prestation
+const cardTexts = [
+  "Confiez-nous l'entretien de votre jardin pour un espace toujours impeccable. Nos experts s'occupent de la tonte, du désherbage et de l'entretien régulier pour un jardin en pleine santé.",
+  "Transformez votre espace extérieur avec notre service d'aménagement paysager. Nous créons des jardins harmonieux et fonctionnels qui reflètent votre style et vos besoins.",
+  "Nos spécialistes en élagage et abattage interviennent avec précision pour entretenir vos arbres ou les retirer en toute sécurité, préservant ainsi la beauté et la santé de votre espace vert."
+];
 
 // Index de l'image active
 const activeImageIndex = ref(0);

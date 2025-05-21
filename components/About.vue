@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-6 py-16">
+  <div class="container-fluid px-8 py-16">
     <div class="flex flex-col md:flex-row gap-8">
       <!-- Section texte de présentation (moitié gauche) -->
       <div class="w-full md:w-1/2 pr-0 md:pr-6">
