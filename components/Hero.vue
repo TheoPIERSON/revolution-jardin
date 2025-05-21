@@ -9,8 +9,12 @@
       />
 
       <!-- Carte en bas à gauche -->
-      <div class="absolute bottom-12 left-12 bg-white rounded-xl p-6 shadow-lg max-w-md">
-        <h2 class="text-2xl font-bold mb-2">Transformez votre espace extérieur</h2>
+      <div class="absolute bottom-12 left-12 bg-white rounded-xl p-6 shadow-lg max-w-lg">
+        <h2 class="text-2xl font-bold mb-2">Transformez votre espace extérieur avec</h2>
+        <h1 class="text-4xl font-bold">
+          <span class="font-poppins text-red-600">Révolution </span>
+          <span class="text-[#5D9C74] font-normal">Jardin</span>
+        </h1>
         <p class="text-gray-700 mb-4">
           Confiez-nous votre jardin et découvrez notre expertise en aménagement paysager, entretien et élagage pour un
           résultat qui dépasse vos attentes.
